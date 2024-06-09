@@ -7,10 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        anime: {
+          "0%": {
+            display: "hidden",
+            opacity: 0,
+            transform: ` translateY(200%)`,
+          },
+          "100%": {
+            display: "block",
+            opacity: 1,
+            transform: `translateY(0)`,
+          },
+        },
+      },
+      spacing: {
+        "calc-50-minus-10": "calc(50% - 10px)",
+        "calc-100-minus-20": "calc(100% - 20px)",
       },
     },
   },
