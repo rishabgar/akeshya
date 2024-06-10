@@ -1,18 +1,18 @@
-"use client";
+// "use client";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 function NavBar() {
   const pathName = usePathname();
-  // console.log(pathName);
 
   return (
     <>
-      <div className="fixed h-20 border-2 pr-24 pl-24 border-black border-solid w-full flex items-center justify-between">
-        <div className="text-2xl w-2/5">
+      <div className="fixed top-0 h-20 border-2 pl-24 border-black border-solid w-full flex items-center justify-between">
+        <div className="text-2xl w-2/5 ">
           <h1>AKESHYA</h1>
         </div>
-        <ul className="border-blue-800 w-1/2 flex justify-center pr-4 pl-4 items-center">
+        <ul className="w-1/2 flex justify-center pr-4 pl-4 items-center ">
           <li className="mr-7">
             <Link
               className={`${
