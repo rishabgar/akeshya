@@ -8,16 +8,12 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        anime: {
+        upDown: {
           "0%": {
-            display: "hidden",
-            opacity: 0,
-            transform: ` translateY(200%)`,
+            transform: `translateY(10px)`,
           },
           "100%": {
-            display: "block",
-            opacity: 1,
-            transform: `translateY(0)`,
+            transform: `translateY(-10px)`,
           },
         },
       },

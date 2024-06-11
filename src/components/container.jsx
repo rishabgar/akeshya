@@ -1,12 +1,19 @@
-// "use server";
-// import React from "react";
+"use client";
 
-async function Container({ children }) {
-  return (
-    <div className=" h-full w-full pr-24 pl-24 mt-20 border-2 border-solid border-black">
-      {children}
-    </div>
-  );
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+function Container({ children }) {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      delay: 50,
+      duration: 1000,
+      offset: 120,
+    });
+  }, []);
+  return <div className=" h-full mr-64 ml-64">{children}</div>;
 }
 
 export default Container;
