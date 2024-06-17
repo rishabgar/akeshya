@@ -16,12 +16,7 @@ function NavBar() {
             className="text-3xl flex items-center  text-[#14279B] font-bold "
             href="/"
           >
-            <Image
-              src="/images/png/logo.png"
-              alt="test"
-              width={65}
-              height={70}
-            />
+            <img src="/images/png/logo.png" alt="test" width={65} height={70} />
             <h1>AKESHYA</h1>
           </Link>
           <ul className="flex justify-center items-center h-full">

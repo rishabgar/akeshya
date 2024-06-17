@@ -13,7 +13,7 @@ function Container({ children }) {
       offset: 120,
     });
   }, []);
-  return <div className=" h-full mr-64 ml-64">{children}</div>;
+  return <div className=" h-full mx-[155px] ">{children}</div>;
 }
 
 export default Container;

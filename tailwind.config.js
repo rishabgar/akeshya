@@ -21,6 +21,9 @@ module.exports = {
         "calc-50-minus-10": "calc(50% - 10px)",
         "calc-100-minus-20": "calc(100% - 20px)",
       },
+      colors: {
+        "custom-blue": "#14279B",
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,18 @@
+  .custom-list {
+    /* list-style-type: none;  */
+  }
+  .custom-list > li {
+    position: relative;
+  }
+
+  .custom-list li::before {
+    content: "\e679"; /* Remix Icon content */
+    font-family: "remixIcon" !important ; /* Correct font family */
+
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #14279b;
+    line-height: 1;
+  }

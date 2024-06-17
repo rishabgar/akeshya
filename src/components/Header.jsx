@@ -1,11 +1,9 @@
 "use client";
-
 import React from "react";
-import Image from "next/image";
 
 function mainSection() {
   return (
-    <div className="h-[590px] py-14">
+    <div className="h-[450px] pb-14">
       <div className="grid grid-cols-2 h-[430px]" data-aos="fade-up">
         <div>
           <h1 className="text-5xl pb-3 font-bold text-[#14279B]">
@@ -20,7 +18,7 @@ function mainSection() {
           </button>
         </div>
         <div>
-          <Image
+          <img
             src={"/images/png/hero-img.png"}
             alt=""
             width={600}

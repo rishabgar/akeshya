@@ -7,3 +7,18 @@
     font-size: 40px;
   }
 }
+
+.line-text {
+  @apply relative text-center;
+}
+.line-text::before,
+.line-text::after {
+  @apply absolute inset-y-1/2 border-t border-black border-2 w-12;
+  content: "";
+}
+.line-text::before {
+  @apply right-full mr-2;
+}
+.line-text::after {
+  @apply left-full ml-2;
+}
