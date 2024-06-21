@@ -76,10 +76,10 @@ function About({ scrollToSection }) {
           </ul>
         </div>
         <div className=" text-[#444444] flex flex-col gap-y-7">
-          We're professional, but we're also friendly, and we'll always pay
+          We&apos;re professional, but we&apos;re also friendly, and we&apos;ll always pay
           attention to your concerns. We expect to work with innovative people
           that have an open mind and are dedicated to making every idea a
-          reality. We want to hear from you if you're interested in SEO, have
+          reality. We want to hear from you if you&apos;re interested in SEO, have
           Web Development ideas, or require a graphic designer who can match
           your goals.
           <button
