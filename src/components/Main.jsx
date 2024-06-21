@@ -2,7 +2,7 @@ import React from "react";
 
 function Main() {
   return (
-    <main className="w-full h-28 bg-[#f3f9fd]">
+    <main className="w-full h-40 bg-[#f3f9fd]">
       <div className="flex justify-between items-center h-full mr-64 ml-64 px-6">
         <div className="h-24 w-24">
           <img

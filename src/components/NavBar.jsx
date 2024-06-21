@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,7 +8,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="fixed top-0 h-36 w-full flex items-center z-50 bg-white">
+      <div className="fixed top-0 h-36 w-full flex items-center z-50 bg-white shadow-navbar-shadow">
         <div className="mr-64 ml-64 h-20 w-full flex items-center justify-between ">
           <Link
             className="text-3xl flex items-center  text-[#14279B] font-bold "
@@ -43,9 +41,9 @@ function NavBar() {
             <li className="mr-7">
               <Link
                 className={`${
-                  pathName === "/services" ? "text-[#14279B]" : "text-[#555555]"
+                  pathName === "#services" ? "text-[#14279B]" : "text-[#555555]"
                 }`}
-                href="/services"
+                href="#services"
               >
                 Services
               </Link>

@@ -6,7 +6,7 @@ import { CiClock2 } from "react-icons/ci";
 import { BsJournalRichtext } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 
-function About() {
+function About({ scrollToSection }) {
   const [count, setCount] = useState(3834000);
   const limit = 3835039; // Set your limit here
   const [ref, inView] = useInView({
@@ -33,7 +33,7 @@ function About() {
   }, [inView]);
 
   return (
-    <div className="flex items-center flex-col py-12">
+    <div className="flex items-center flex-col py-16">
       <div
         className="line-text text-3xl font-bold mb-10"
         data-aos="fade-up"
@@ -82,7 +82,10 @@ function About() {
           reality. We want to hear from you if you're interested in SEO, have
           Web Development ideas, or require a graphic designer who can match
           your goals.
-          <button className="border-2 w-56 border-solid text-[#14279B] border-[#14279B] px-7 py-2 rounded-full hover:bg-[#14279B] hover:text-white">
+          <button
+            className="border-2 w-56 border-solid text-[#14279B] border-[#14279B] px-7 py-2 rounded-full hover:bg-[#14279B] hover:text-white"
+            onClick={() => scrollToSection("services")}
+          >
             Learn More
           </button>
         </div>

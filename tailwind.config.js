@@ -24,6 +24,11 @@ module.exports = {
       colors: {
         "custom-blue": "#14279B",
       },
+      boxShadow: {
+        "custom-light": "0px 2px 15px rgba(0, 0, 0, 0.1)",
+        "footer-shadow": "0px 0px 12px 0px rgba(0, 0, 0, 0.1)",
+        "navbar-shadow": "0px 2px 15px rgba(0, 0, 0, 0.1)",
+      },
     },
   },
   plugins: [],
